@@ -1,0 +1,21 @@
+[versions]
+shadow = "9.2.2"
+jackson-core = "2.20.1"
+jackson-databind = "2.20.1"
+mariadb = "3.5.3"
+hibernate = "6.6.5.Final"
+java-websocket = "1.5.6"
+snakeyaml = "2.5"
+slf4j = "2.0.17"
+
+[libraries]
+jackson-core = { module = "com.fasterxml.jackson.core:jackson-core", version.ref = "jackson-core" }
+jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind", version.ref = "jackson-databind" }
+mariadb-java-client = { module = "org.mariadb.jdbc:mariadb-java-client", version.ref = "mariadb" }
+hibernate-core = { module = "org.hibernate.orm:hibernate-core", version.ref = "hibernate" }
+java-websocket = { module = "org.java-websocket:Java-WebSocket", version.ref = "java-websocket" }
+snakeyaml = { module = "org.yaml:snakeyaml", version.ref = "snakeyaml" }
+slf4j = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
+
+[plugins]
+shadow = { id = "com.gradleup.shadow", version.ref = "shadow" }

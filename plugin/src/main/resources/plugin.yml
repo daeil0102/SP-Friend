@@ -1,0 +1,17 @@
+name: '${name}'
+version: '${version}'
+main: net.teujaem.spfriend.Main
+api-version: '${spigot_api_version}'
+depend: [SP-Framework]
+authors: [Teujaem]
+description: SP-Framework 기반 프록시 친구 시스템
+commands:
+  friend:
+    description: 친구 요청과 목록을 관리합니다.
+    usage: /친구 도움말
+    aliases: [friends, 친구]
+    permission: spfriend.use
+permissions:
+  spfriend.use:
+    description: SP-Friend 명령어 사용 권한
+    default: true
